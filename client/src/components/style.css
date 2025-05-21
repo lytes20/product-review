@@ -1,0 +1,27 @@
+.product {
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.product-image {
+  width: 400px;
+}
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.product-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.product-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+div {
+  /* border: 1px solid red; */
+}
+img {
+  width: 100%;
+}
