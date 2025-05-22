@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "id": "1",
+    "name": "Wireless Headphones",
+    "description": "Bluetooth over-ear headphones with noise cancellation.",
+    "category": "Electronics",
+    "price": 99.99,
+    "dateAdded": "2025-05-01T10:00:00Z",
+    "averageRating": 4.5,
+    "imageUrl": "https://dummyimage.com/300x300/000/fff&text=Headphones"
+  },
+  {
+    "id": "2",
+    "name": "Organic Green Tea",
+    "description": "100% natural green tea leaves for a healthy lifestyle.",
+    "category": "Groceries",
+    "price": 15.5,
+    "dateAdded": "2025-04-28T14:45:00Z",
+    "averageRating": 4,
+    "imageUrl": "https://dummyimage.com/300x300/008000/ffffff&text=Green+Tea"
+  },
+  {
+    "id": "3",
+    "name": "Smartphone Stand",
+    "description": "Adjustable stand for phones and tablets.",
+    "category": "Accessories",
+    "price": 8.99,
+    "dateAdded": "2025-04-30T09:20:00Z",
+    "averageRating": 3.5,
+    "imageUrl": "https://dummyimage.com/300x300/333/fff&text=Phone+Stand"
+  }
+]

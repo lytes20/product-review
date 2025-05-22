@@ -5,11 +5,20 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f6fa;
+  color: #2f3640;
 }
 
 header {
-  background: #1877f2;
+  background-color: #0984e3;
   color: white;
-  padding: 20px;
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  margin: 0;
+  font-size: 1.75rem;
 }

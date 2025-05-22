@@ -1,0 +1,42 @@
+[
+  {
+    "id": "101",
+    "productId": "1",
+    "author": "Alice",
+    "rating": 5,
+    "comment": "Amazing sound quality and very comfortable!",
+    "date": "2025-05-02T12:30:00Z"
+  },
+  {
+    "id": "102",
+    "productId": "1",
+    "author": "Bob",
+    "rating": 4,
+    "comment": "Great noise cancellation, but battery life could be better.",
+    "date": "2025-05-03T09:15:00Z"
+  },
+  {
+    "id": "103",
+    "productId": "2",
+    "author": "Clara",
+    "rating": 4,
+    "comment": "Very refreshing and good value for money.",
+    "date": "2025-05-01T16:50:00Z"
+  },
+  {
+    "id": "104",
+    "productId": "3",
+    "author": "Dave",
+    "rating": 3,
+    "comment": "It does the job but feels a bit flimsy.",
+    "date": "2025-05-01T11:10:00Z"
+  },
+  {
+    "id": "105",
+    "productId": "3",
+    "author": "Eve",
+    "rating": 4,
+    "comment": "Compact and useful, good for travel.",
+    "date": "2025-05-02T13:40:00Z"
+  }
+]
