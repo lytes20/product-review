@@ -37,16 +37,18 @@ const ReviewModal: React.FC<Props> = ({
 
   if (!isOpen) return null;
 
+  const handleMakeRequest = () => {
+    fetch(`http://localhost:3030/api/products/${productId}/reviews`, {
+      method: `${initialData ? "PUT" : "POST"}`,
+      body: JSON.stringify({ author, rating, comment }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  };
   const handleSubmit = () => {
-    const review: Review = {
-      id: initialData?.id ?? Date.now(),
-      productId,
-      author,
-      rating,
-      comment,
-      date: new Date().toISOString(),
-    };
-    onSave(review);
+    handleMakeRequest();
+    onSave();
     onClose();
   };
 

@@ -17,6 +17,26 @@ const loadReviews = (): Review[] => {
 };
 
 /**
+ * Save all reviews to the JSON file.
+ */
+const saveReviews = (reviews: Review[]): void => {
+  try {
+    fs.writeFileSync(REVIEWS_FILE, JSON.stringify(reviews, null, 2), "utf-8");
+  } catch (error) {
+    console.error("Error writing to reviews.json:", error);
+  }
+};
+
+/**
+ * Add a new review to the reviews file.
+ */
+const saveReview = (review: Review): void => {
+  const reviews = loadReviews();
+  reviews.push(review);
+  saveReviews(reviews);
+};
+
+/**
  * Get all reviews for a specific product by its ID.
  */
 const getReviewsByProductId = (productId: string): Review[] => {
@@ -24,4 +44,4 @@ const getReviewsByProductId = (productId: string): Review[] => {
   return allReviews.filter((review) => review.productId === productId);
 };
 
-export default { getReviewsByProductId };
+export default { getReviewsByProductId, saveReview };
