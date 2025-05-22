@@ -3,6 +3,15 @@ import Product from "../models/Product";
 import productsService from "../services/products";
 import reviewsService from "../services/reviews";
 
+// Helper function to compute average rating
+const computeAverageRating = (productId: string): number => {
+  const reviews = reviewsService.getReviewsByProductId(productId);
+  if (!reviews || reviews.length === 0) return 0;
+
+  const totalRating = reviews.reduce((sum, review) => sum + review.rating, 0);
+  return Number((totalRating / reviews.length).toFixed(1));
+};
+
 // Create a product
 const createProduct = (req: Request, res: Response, next: NextFunction) => {
   try {
@@ -19,7 +28,16 @@ const createProduct = (req: Request, res: Response, next: NextFunction) => {
 const getProducts = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const products = await productsService.getAllProducts();
-    res.status(200).json({ message: "Success", products });
+
+    // Compute average rating for each product
+    const productsWithRatings = products.map((product) => {
+      return {
+        ...product,
+        averageRating: computeAverageRating(product.id),
+      };
+    });
+
+    res.status(200).json({ message: "Success", products: productsWithRatings });
   } catch (error) {
     next(error);
   }
@@ -40,8 +58,15 @@ const searchProducts = async (
     const pageSize = parseInt(limit as string, 10) || 10;
 
     const allProducts = await productsService.getAllProducts();
+    // Compute average rating for each product
+    const productsWithRatings = allProducts.map((product) => {
+      return {
+        ...product,
+        averageRating: computeAverageRating(product.id),
+      };
+    });
 
-    let filtered = allProducts;
+    let filtered = productsWithRatings;
 
     // Search by name
     if (searchQuery) {
@@ -80,7 +105,6 @@ const getProductReviews = async (
   res: Response,
   next: NextFunction
 ) => {
-  const productId = req.params.id;
   try {
     const productId = req.params.id;
 
@@ -96,7 +120,10 @@ const getProductReviews = async (
     const reviews = reviewsService.getReviewsByProductId(productId);
 
     res.status(200).json({
-      product,
+      product: {
+        ...product,
+        averageRating: computeAverageRating(productId),
+      },
       reviews,
     });
   } catch (error) {

@@ -6,7 +6,6 @@
     "category": "Electronics",
     "price": 99.99,
     "dateAdded": "2025-05-01T10:00:00Z",
-    "averageRating": 4.5,
     "imageUrl": "https://dummyimage.com/300x300/000/fff&text=Headphones"
   },
   {
@@ -16,7 +15,6 @@
     "category": "Groceries",
     "price": 15.5,
     "dateAdded": "2025-04-28T14:45:00Z",
-    "averageRating": 4,
     "imageUrl": "https://dummyimage.com/300x300/008000/ffffff&text=Green+Tea"
   },
   {
@@ -26,7 +24,6 @@
     "category": "Accessories",
     "price": 8.99,
     "dateAdded": "2025-04-30T09:20:00Z",
-    "averageRating": 3.5,
     "imageUrl": "https://dummyimage.com/300x300/333/fff&text=Phone+Stand"
   },
   {
@@ -36,7 +33,6 @@
     "category": "Fitness",
     "price": 22.0,
     "dateAdded": "2025-04-25T08:15:00Z",
-    "averageRating": 4.2,
     "imageUrl": "https://dummyimage.com/300x300/f39c12/fff&text=Yoga+Mat"
   },
   {
@@ -46,7 +42,6 @@
     "category": "Electronics",
     "price": 17.49,
     "dateAdded": "2025-04-26T11:30:00Z",
-    "averageRating": 4.3,
     "imageUrl": "https://dummyimage.com/300x300/7f8c8d/fff&text=Mouse"
   },
   {
@@ -56,7 +51,6 @@
     "category": "Accessories",
     "price": 29.99,
     "dateAdded": "2025-04-20T10:00:00Z",
-    "averageRating": 4.1,
     "imageUrl": "https://dummyimage.com/300x300/6f4e37/fff&text=Wallet"
   },
   {
@@ -66,7 +60,6 @@
     "category": "Electronics",
     "price": 39.99,
     "dateAdded": "2025-04-18T13:00:00Z",
-    "averageRating": 4.6,
     "imageUrl": "https://dummyimage.com/300x300/2980b9/fff&text=Speaker"
   },
   {
@@ -76,7 +69,6 @@
     "category": "Footwear",
     "price": 65.0,
     "dateAdded": "2025-04-15T16:00:00Z",
-    "averageRating": 4.4,
     "imageUrl": "https://dummyimage.com/300x300/2ecc71/fff&text=Running+Shoes"
   },
   {
@@ -86,7 +78,6 @@
     "category": "Home",
     "price": 27.5,
     "dateAdded": "2025-04-10T09:00:00Z",
-    "averageRating": 4.7,
     "imageUrl": "https://dummyimage.com/300x300/f1c40f/000&text=Desk+Lamp"
   },
   {
@@ -96,7 +87,6 @@
     "category": "Accessories",
     "price": 48.0,
     "dateAdded": "2025-04-08T12:30:00Z",
-    "averageRating": 4.3,
     "imageUrl": "https://dummyimage.com/300x300/34495e/fff&text=Backpack"
   },
   {
@@ -106,7 +96,6 @@
     "category": "Home",
     "price": 85.99,
     "dateAdded": "2025-04-06T15:15:00Z",
-    "averageRating": 4.6,
     "imageUrl": "https://dummyimage.com/300x300/9b59b6/fff&text=Espresso+Maker"
   },
   {
@@ -116,7 +105,6 @@
     "category": "Clothing",
     "price": 12.99,
     "dateAdded": "2025-04-05T11:20:00Z",
-    "averageRating": 4.0,
     "imageUrl": "https://dummyimage.com/300x300/95a5a6/fff&text=T-Shirt"
   },
   {
@@ -126,7 +114,6 @@
     "category": "Electronics",
     "price": 19.99,
     "dateAdded": "2025-04-03T08:50:00Z",
-    "averageRating": 4.2,
     "imageUrl": "https://dummyimage.com/300x300/2c3e50/fff&text=Laptop+Stand"
   },
   {
@@ -136,7 +123,6 @@
     "category": "Stationery",
     "price": 10.5,
     "dateAdded": "2025-04-02T10:30:00Z",
-    "averageRating": 4.3,
     "imageUrl": "https://dummyimage.com/300x300/8e44ad/fff&text=Notebook"
   },
   {
@@ -146,7 +132,6 @@
     "category": "Fitness",
     "price": 18.0,
     "dateAdded": "2025-03-30T13:30:00Z",
-    "averageRating": 4.8,
     "imageUrl": "https://dummyimage.com/300x300/1abc9c/fff&text=Water+Bottle"
   },
   {
@@ -156,7 +141,6 @@
     "category": "Books",
     "price": 9.99,
     "dateAdded": "2025-03-28T09:30:00Z",
-    "averageRating": 4.9,
     "imageUrl": "https://dummyimage.com/300x300/e74c3c/fff&text=1984"
   },
   {
@@ -166,7 +150,6 @@
     "category": "Home",
     "price": 25.0,
     "dateAdded": "2025-03-27T12:00:00Z",
-    "averageRating": 4.4,
     "imageUrl": "https://dummyimage.com/300x300/f5f5f5/000&text=Pillowcase"
   },
   {
@@ -176,7 +159,6 @@
     "category": "Electronics",
     "price": 6.99,
     "dateAdded": "2025-03-25T10:45:00Z",
-    "averageRating": 4.1,
     "imageUrl": "https://dummyimage.com/300x300/c0392b/fff&text=Thermometer"
   },
   {
@@ -186,7 +168,6 @@
     "category": "Footwear",
     "price": 35.0,
     "dateAdded": "2025-03-23T11:15:00Z",
-    "averageRating": 4.2,
     "imageUrl": "https://dummyimage.com/300x300/7f8c8d/fff&text=Sneakers"
   },
   {
@@ -196,7 +177,6 @@
     "category": "Groceries",
     "price": 14.99,
     "dateAdded": "2025-03-22T14:00:00Z",
-    "averageRating": 4.3,
     "imageUrl": "https://dummyimage.com/300x300/ff9ff3/000&text=Moisturizer"
   }
 ]
