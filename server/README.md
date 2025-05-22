@@ -21,7 +21,7 @@ A RESTful API server built with Express.js and TypeScript for managing product r
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/lytes20/product-review
+git clone https://github.com/lytes20/product-review.git
 cd server
 ```
 
@@ -98,11 +98,3 @@ npm run build
 ```
 
 This will create a `dist` directory with the compiled JavaScript files.
-
-## Author
-
-Gideon Bamuleseyo
-
-## License
-
-ISC
