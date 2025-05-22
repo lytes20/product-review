@@ -8,7 +8,7 @@ const createProduct = (req: Request, res: Response, next: NextFunction) => {
   try {
     const { name, description, category, price } = req.body;
     const product = new Product(name, description, category, price);
-    // Insert logic here
+    // TODO:Save product to products.json file
     res.status(201).json(product);
   } catch (error) {
     next(error);
