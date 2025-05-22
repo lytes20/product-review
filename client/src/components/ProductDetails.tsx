@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import type { ProductType, Review } from "./types";
 import ReviewModal from "./ReviewModal";
 import "./styles/ProductDetails.css";
+import { BASE_URL } from "../constants";
 
 const ProductDetails = () => {
   const { productId } = useParams<{ productId: string }>();
@@ -15,7 +16,7 @@ const ProductDetails = () => {
 
   useEffect(() => {
     if (productId) {
-      fetch(`http://localhost:3030/api/products/${productId}/reviews`)
+      fetch(`${BASE_URL}/${productId}/reviews`)
         .then((res) => res.json())
         .then((data) => {
           setProduct(data.product);
@@ -30,7 +31,7 @@ const ProductDetails = () => {
     ));
 
   const handleDeleteReview = (id: string) => {
-    fetch(`http://localhost:3030/api/products/${productId}/reviews/${id}`, {
+    fetch(`${BASE_URL}/${productId}/reviews/${id}`, {
       method: "DELETE",
     }).then(() => {
       setIsLoading(false);

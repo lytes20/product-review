@@ -12,7 +12,7 @@ app.use("/api/products", productRouter);
 
 app.use(errorHandler);
 
-const port = process.env.port || 3030;
+const port = process.env.PORT || 3030;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
   console.log(`http://localhost:${port}`);

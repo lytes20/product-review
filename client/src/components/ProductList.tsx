@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Product from "./Product";
 import "./style.css";
+import { BASE_URL } from "../constants";
 
 interface ProductType {
   id: number;
@@ -37,7 +38,7 @@ function ProductList() {
     params.append("page", page.toString());
     params.append("limit", limit.toString());
 
-    fetch(`http://localhost:3030/api/products/search?${params.toString()}`)
+    fetch(`${BASE_URL}/search?${params.toString()}`)
       .then((res) => res.json())
       .then((res) => {
         setProducts(res.results || []);

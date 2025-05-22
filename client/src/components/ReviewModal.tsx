@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import type { Review } from "./types";
 import "./styles/ReviewModal.css";
+import { BASE_URL } from "../constants";
 
 interface Props {
   isOpen: boolean;
@@ -40,7 +41,7 @@ const ReviewModal: React.FC<Props> = ({
 
   const handleMakeCreateRequest = () => {
     setIsLoading(true);
-    fetch(`http://localhost:3030/api/products/${productId}/reviews`, {
+    fetch(`${BASE_URL}/${productId}/reviews`, {
       method: "POST",
       body: JSON.stringify({ author, rating, comment }),
       headers: {
@@ -55,16 +56,13 @@ const ReviewModal: React.FC<Props> = ({
 
   const handleMakeEditRequest = () => {
     setIsLoading(true);
-    fetch(
-      `http://localhost:3030/api/products/${productId}/reviews/${initialData?.id}`,
-      {
-        method: "PUT",
-        body: JSON.stringify({ author, rating, comment }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    ).then(() => {
+    fetch(`${BASE_URL}/${productId}/reviews/${initialData?.id}`, {
+      method: "PUT",
+      body: JSON.stringify({ author, rating, comment }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }).then(() => {
       setIsLoading(false);
       onClose();
       onSave();
