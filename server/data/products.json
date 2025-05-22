@@ -28,5 +28,175 @@
     "dateAdded": "2025-04-30T09:20:00Z",
     "averageRating": 3.5,
     "imageUrl": "https://dummyimage.com/300x300/333/fff&text=Phone+Stand"
+  },
+  {
+    "id": "4",
+    "name": "Yoga Mat",
+    "description": "Non-slip yoga mat for all types of yoga and workouts.",
+    "category": "Fitness",
+    "price": 22.0,
+    "dateAdded": "2025-04-25T08:15:00Z",
+    "averageRating": 4.2,
+    "imageUrl": "https://dummyimage.com/300x300/f39c12/fff&text=Yoga+Mat"
+  },
+  {
+    "id": "5",
+    "name": "Wireless Mouse",
+    "description": "Ergonomic wireless mouse with adjustable DPI.",
+    "category": "Electronics",
+    "price": 17.49,
+    "dateAdded": "2025-04-26T11:30:00Z",
+    "averageRating": 4.3,
+    "imageUrl": "https://dummyimage.com/300x300/7f8c8d/fff&text=Mouse"
+  },
+  {
+    "id": "6",
+    "name": "Leather Wallet",
+    "description": "Premium quality leather wallet with RFID protection.",
+    "category": "Accessories",
+    "price": 29.99,
+    "dateAdded": "2025-04-20T10:00:00Z",
+    "averageRating": 4.1,
+    "imageUrl": "https://dummyimage.com/300x300/6f4e37/fff&text=Wallet"
+  },
+  {
+    "id": "7",
+    "name": "Bluetooth Speaker",
+    "description": "Portable waterproof Bluetooth speaker.",
+    "category": "Electronics",
+    "price": 39.99,
+    "dateAdded": "2025-04-18T13:00:00Z",
+    "averageRating": 4.6,
+    "imageUrl": "https://dummyimage.com/300x300/2980b9/fff&text=Speaker"
+  },
+  {
+    "id": "8",
+    "name": "Running Shoes",
+    "description": "Lightweight and breathable running shoes.",
+    "category": "Footwear",
+    "price": 65.0,
+    "dateAdded": "2025-04-15T16:00:00Z",
+    "averageRating": 4.4,
+    "imageUrl": "https://dummyimage.com/300x300/2ecc71/fff&text=Running+Shoes"
+  },
+  {
+    "id": "9",
+    "name": "LED Desk Lamp",
+    "description": "Dimmable LED desk lamp with USB charging port.",
+    "category": "Home",
+    "price": 27.5,
+    "dateAdded": "2025-04-10T09:00:00Z",
+    "averageRating": 4.7,
+    "imageUrl": "https://dummyimage.com/300x300/f1c40f/000&text=Desk+Lamp"
+  },
+  {
+    "id": "10",
+    "name": "Travel Backpack",
+    "description": "Multi-compartment waterproof travel backpack.",
+    "category": "Accessories",
+    "price": 48.0,
+    "dateAdded": "2025-04-08T12:30:00Z",
+    "averageRating": 4.3,
+    "imageUrl": "https://dummyimage.com/300x300/34495e/fff&text=Backpack"
+  },
+  {
+    "id": "11",
+    "name": "Espresso Maker",
+    "description": "Compact espresso machine for home baristas.",
+    "category": "Home",
+    "price": 85.99,
+    "dateAdded": "2025-04-06T15:15:00Z",
+    "averageRating": 4.6,
+    "imageUrl": "https://dummyimage.com/300x300/9b59b6/fff&text=Espresso+Maker"
+  },
+  {
+    "id": "12",
+    "name": "Cotton T-Shirt",
+    "description": "Soft and breathable cotton t-shirt.",
+    "category": "Clothing",
+    "price": 12.99,
+    "dateAdded": "2025-04-05T11:20:00Z",
+    "averageRating": 4.0,
+    "imageUrl": "https://dummyimage.com/300x300/95a5a6/fff&text=T-Shirt"
+  },
+  {
+    "id": "13",
+    "name": "Laptop Stand",
+    "description": "Adjustable laptop stand for better ergonomics.",
+    "category": "Electronics",
+    "price": 19.99,
+    "dateAdded": "2025-04-03T08:50:00Z",
+    "averageRating": 4.2,
+    "imageUrl": "https://dummyimage.com/300x300/2c3e50/fff&text=Laptop+Stand"
+  },
+  {
+    "id": "14",
+    "name": "Notebook Journal",
+    "description": "Hardcover dotted notebook for notes and sketches.",
+    "category": "Stationery",
+    "price": 10.5,
+    "dateAdded": "2025-04-02T10:30:00Z",
+    "averageRating": 4.3,
+    "imageUrl": "https://dummyimage.com/300x300/8e44ad/fff&text=Notebook"
+  },
+  {
+    "id": "15",
+    "name": "Reusable Water Bottle",
+    "description": "Insulated stainless steel water bottle.",
+    "category": "Fitness",
+    "price": 18.0,
+    "dateAdded": "2025-03-30T13:30:00Z",
+    "averageRating": 4.8,
+    "imageUrl": "https://dummyimage.com/300x300/1abc9c/fff&text=Water+Bottle"
+  },
+  {
+    "id": "16",
+    "name": "Classic Novel - 1984",
+    "description": "Dystopian novel by George Orwell.",
+    "category": "Books",
+    "price": 9.99,
+    "dateAdded": "2025-03-28T09:30:00Z",
+    "averageRating": 4.9,
+    "imageUrl": "https://dummyimage.com/300x300/e74c3c/fff&text=1984"
+  },
+  {
+    "id": "17",
+    "name": "Silk Pillowcase",
+    "description": "Luxury silk pillowcase for smooth sleep.",
+    "category": "Home",
+    "price": 25.0,
+    "dateAdded": "2025-03-27T12:00:00Z",
+    "averageRating": 4.4,
+    "imageUrl": "https://dummyimage.com/300x300/f5f5f5/000&text=Pillowcase"
+  },
+  {
+    "id": "18",
+    "name": "Digital Thermometer",
+    "description": "Quick-read digital thermometer for fever check.",
+    "category": "Electronics",
+    "price": 6.99,
+    "dateAdded": "2025-03-25T10:45:00Z",
+    "averageRating": 4.1,
+    "imageUrl": "https://dummyimage.com/300x300/c0392b/fff&text=Thermometer"
+  },
+  {
+    "id": "19",
+    "name": "Canvas Sneakers",
+    "description": "Casual everyday canvas sneakers.",
+    "category": "Footwear",
+    "price": 35.0,
+    "dateAdded": "2025-03-23T11:15:00Z",
+    "averageRating": 4.2,
+    "imageUrl": "https://dummyimage.com/300x300/7f8c8d/fff&text=Sneakers"
+  },
+  {
+    "id": "20",
+    "name": "Face Moisturizer",
+    "description": "Hydrating face moisturizer for daily use.",
+    "category": "Groceries",
+    "price": 14.99,
+    "dateAdded": "2025-03-22T14:00:00Z",
+    "averageRating": 4.3,
+    "imageUrl": "https://dummyimage.com/300x300/ff9ff3/000&text=Moisturizer"
   }
 ]

@@ -10,7 +10,6 @@ export interface Review {
 
 export interface ProductType {
   id: number;
-  title: string;
   name?: string;
   category: string;
   price: number;

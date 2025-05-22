@@ -5,7 +5,6 @@ import type { ProductType } from "./types";
 const Product: React.FC<ProductType> = (props) => {
   const { id, name, category, price, description, imageUrl, averageRating } =
     props;
-  console.log("rating", averageRating);
 
   const navigate = useNavigate();
   const renderStars = (rating: number) => {
