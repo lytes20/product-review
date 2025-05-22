@@ -1,21 +1,5 @@
 [
   {
-    "id": "101",
-    "productId": "1",
-    "author": "Alice",
-    "rating": 5,
-    "comment": "Amazing sound quality and very comfortable!",
-    "date": "2025-05-02T12:30:00Z"
-  },
-  {
-    "id": "102",
-    "productId": "1",
-    "author": "Bob",
-    "rating": 4,
-    "comment": "Great noise cancellation, but battery life could be better.",
-    "date": "2025-05-03T09:15:00Z"
-  },
-  {
     "id": "103",
     "productId": "2",
     "author": "Clara",
@@ -40,16 +24,35 @@
     "date": "2025-05-02T13:40:00Z"
   },
   {
-    "id": "132e8dcd-35f3-43f4-99f5-6d7d3b74073c",
-    "productId": "1",
-    "date": "2025-05-22T04:15:45.008Z"
-  },
-  {
     "id": "2d3e3c68-d855-4a75-bcc7-2aa63bb38aae",
     "productId": "1",
-    "author": "Gideon",
+    "author": "Gideon Bamuleseyo",
     "rating": 3,
     "comment": "Decent headphones",
-    "date": "2025-05-22T04:26:45.052Z"
+    "date": "2025-05-22T05:07:01.645Z"
+  },
+  {
+    "id": "2c9d0584-85f2-456c-9c8d-f69850078522",
+    "productId": "1",
+    "author": "Moges",
+    "rating": 5,
+    "comment": "Best Headphones",
+    "date": "2025-05-22T05:18:57.313Z"
+  },
+  {
+    "id": "e821eb42-bb94-42c9-87a9-e7023ef2a2e1",
+    "productId": "1",
+    "author": "Mohammed",
+    "rating": 4,
+    "comment": "Great noise cancellation, but battery life could be better.",
+    "date": "2025-05-22T05:20:30.974Z"
+  },
+  {
+    "id": "6f771f0c-ff3a-422c-aac8-b96bfa8a5b46",
+    "productId": "2",
+    "author": "Gideon B",
+    "rating": 4,
+    "comment": "Best tea ever",
+    "date": "2025-05-22T05:25:12.373Z"
   }
 ]

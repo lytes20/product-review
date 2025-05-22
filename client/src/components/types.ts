@@ -1,7 +1,7 @@
 // types.ts
 export interface Review {
-  id: number;
-  productId: number;
+  id: string;
+  productId: string;
   author: string;
   rating: number;
   comment: string;

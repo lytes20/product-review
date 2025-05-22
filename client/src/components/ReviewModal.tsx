@@ -5,7 +5,7 @@ import "./styles/ReviewModal.css";
 interface Props {
   isOpen: boolean;
   onClose: () => void;
-  onSave: (review: Review) => void;
+  onSave: () => void;
   productId: number;
   initialData?: Review | null;
 }
@@ -20,6 +20,7 @@ const ReviewModal: React.FC<Props> = ({
   const [author, setAuthor] = useState("");
   const [rating, setRating] = useState(1);
   const [comment, setComment] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     if (initialData) {
@@ -37,19 +38,44 @@ const ReviewModal: React.FC<Props> = ({
 
   if (!isOpen) return null;
 
-  const handleMakeRequest = () => {
+  const handleMakeCreateRequest = () => {
+    setIsLoading(true);
     fetch(`http://localhost:3030/api/products/${productId}/reviews`, {
-      method: `${initialData ? "PUT" : "POST"}`,
+      method: "POST",
       body: JSON.stringify({ author, rating, comment }),
       headers: {
         "Content-Type": "application/json",
       },
+    }).then(() => {
+      setIsLoading(false);
+      onClose();
+      onSave();
+    });
+  };
+
+  const handleMakeEditRequest = () => {
+    setIsLoading(true);
+    fetch(
+      `http://localhost:3030/api/products/${productId}/reviews/${initialData?.id}`,
+      {
+        method: "PUT",
+        body: JSON.stringify({ author, rating, comment }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    ).then(() => {
+      setIsLoading(false);
+      onClose();
+      onSave();
     });
   };
   const handleSubmit = () => {
-    handleMakeRequest();
-    onSave();
-    onClose();
+    if (initialData) {
+      handleMakeEditRequest();
+    } else {
+      handleMakeCreateRequest();
+    }
   };
 
   return (
@@ -82,12 +108,16 @@ const ReviewModal: React.FC<Props> = ({
           value={comment}
           onChange={(e) => setComment(e.target.value)}
         />
-        <div className="modal-actions">
-          <button onClick={handleSubmit}>
-            {initialData ? "Update" : "Submit"}
-          </button>
-          <button onClick={onClose}>Cancel</button>
-        </div>
+        {isLoading ? (
+          <span>Saving ...</span>
+        ) : (
+          <div className="modal-actions">
+            <button onClick={handleSubmit} disabled={isLoading}>
+              {initialData ? "Update" : "Submit"}
+            </button>
+            <button onClick={onClose}>Cancel</button>
+          </div>
+        )}
       </div>
     </div>
   );

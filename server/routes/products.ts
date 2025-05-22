@@ -14,7 +14,7 @@ router.get("/search", productController.searchProducts);
 // Reviews
 router.get("/:id/reviews", productController.getProductReviews); // Fetch all reviews for a product.
 router.post("/:id/reviews", reviewsController.postReview); // POST /products/:id/reviews
-// router.put("/:productId/reviews/:id", productController.createProduct); // PUT /products/:productId/reviews/:id
-// router.delete("/:productId/reviews/:id", productController.createProduct); // DELETE /products/:productId/reviews/:id
+router.put("/:productId/reviews/:id", reviewsController.updateReview); // PUT /products/:productId/reviews/:id
+router.delete("/:productId/reviews/:id", reviewsController.deleteReview); // DELETE /products/:productId/reviews/:id
 
 export default router;

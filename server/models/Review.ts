@@ -31,9 +31,9 @@ export class Review implements ReviewProps {
     this.date = new Date().toISOString();
   }
 
-  update(author: string, rating: number, comment: string) {
-    if (author) this.author = author;
-    if (rating) this.rating = rating;
-    if (comment) this.comment = comment;
-  }
+  // update(author: string, rating: number, comment: string) {
+  //   if (author) this.author = author;
+  //   if (rating) this.rating = rating;
+  //   if (comment) this.comment = comment;
+  // }
 }

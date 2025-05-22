@@ -44,4 +44,49 @@ const getReviewsByProductId = (productId: string): Review[] => {
   return allReviews.filter((review) => review.productId === productId);
 };
 
-export default { getReviewsByProductId, saveReview };
+/**
+ * Update a review by productId and reviewId.
+ */
+const updateReview = (
+  productId: string,
+  reviewId: string,
+  data: { author?: string; rating?: number; comment?: string }
+): boolean => {
+  const reviews = loadReviews();
+  const index = reviews.findIndex(
+    (r) => r.productId === productId && r.id === reviewId
+  );
+
+  if (index === -1) return false;
+
+  if (data.author) reviews[index].author = data.author;
+  if (data.rating) reviews[index].rating = data.rating;
+  if (data.comment) reviews[index].comment = data.comment;
+
+  reviews[index].date = new Date().toISOString();
+
+  saveReviews(reviews);
+  return true;
+};
+
+/**
+ * Delete a review by productId and reviewId.
+ */
+const deleteReview = (productId: string, reviewId: string): boolean => {
+  const reviews = loadReviews();
+  const index = reviews.findIndex(
+    (r) => r.productId === productId && r.id === reviewId
+  );
+
+  if (index === -1) return false;
+
+  reviews.splice(index, 1);
+  saveReviews(reviews);
+  return true;
+};
+export default {
+  getReviewsByProductId,
+  saveReview,
+  updateReview,
+  deleteReview,
+};

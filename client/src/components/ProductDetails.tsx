@@ -5,29 +5,38 @@ import ReviewModal from "./ReviewModal";
 import "./styles/ProductDetails.css";
 
 const ProductDetails = () => {
-  const { id } = useParams<{ id: string }>();
+  const { productId } = useParams<{ productId: string }>();
   const [product, setProduct] = useState<ProductType | null>(null);
   const [reviews, setReviews] = useState<Review[]>([]);
   const [showModal, setShowModal] = useState(false);
   const [editingReview, setEditingReview] = useState<Review | null>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [refetch, setRefetch] = useState(1);
 
   useEffect(() => {
-    if (id) {
-      fetch(`http://localhost:3030/api/products/${id}/reviews`)
+    if (productId) {
+      fetch(`http://localhost:3030/api/products/${productId}/reviews`)
         .then((res) => res.json())
         .then((data) => {
           setProduct(data.product);
           setReviews(data.reviews);
         });
     }
-  }, [id]);
+  }, [productId, refetch]);
 
   const renderStars = (rating: number) =>
     [...Array(5)].map((_, index) => (
       <span key={index}>{index < rating ? "★" : "☆"}</span>
     ));
 
-  const handleDeleteReview = (id: number) => {};
+  const handleDeleteReview = (id: string) => {
+    fetch(`http://localhost:3030/api/products/${productId}/reviews/${id}`, {
+      method: "DELETE",
+    }).then(() => {
+      setIsLoading(false);
+      setRefetch((prev) => prev + 1);
+    });
+  };
   if (!product) return <p>Loading product...</p>;
 
   return (
@@ -63,6 +72,7 @@ const ProductDetails = () => {
           Add Review
         </button>
 
+        {isLoading && <span>Saving...</span>}
         {reviews.length === 0 ? (
           <p>No reviews yet.</p>
         ) : (
@@ -81,10 +91,14 @@ const ProductDetails = () => {
                       setEditingReview(review);
                       setShowModal(true);
                     }}
+                    disabled={isLoading}
                   >
                     Edit
                   </button>
-                  <button onClick={() => handleDeleteReview(review.id)}>
+                  <button
+                    onClick={() => handleDeleteReview(review.id)}
+                    disabled={isLoading}
+                  >
                     Delete
                   </button>
                 </div>
@@ -97,7 +111,9 @@ const ProductDetails = () => {
       <ReviewModal
         isOpen={showModal}
         onClose={() => setShowModal(false)}
-        onSave={() => {}}
+        onSave={() => {
+          setRefetch((prev) => prev + 1);
+        }}
         productId={product.id}
         initialData={editingReview}
       />
